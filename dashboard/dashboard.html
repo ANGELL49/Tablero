@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DASHBOARD</title>
+  <link rel="stylesheet" href="dashb.css">
+</head>
+<body>
+  <div class="formularioTareas">
+    <h2>Gestor de Tareas</h2>
+    <input type="text" id="tareaNombre" placeholder="Descripción de la tarea">
+    <input type="radio" name="importancia" id="masImportante" value="masImportante">
+    <label for="masImportante">Más Importantes</label>
+
+    <input type="radio" name="importancia" id="menosImportante" value="noImportante">
+    <label for="menosImportante">Menos Importantes</label>
+    <br><br>
+    <button onclick="agregarTarea()">Agregar Tarea</button>
+  </div>
+
+  <div class="contenedorTareas">
+    <div id="columMasImportantes" class="columna">
+      <h2>Mas Importante</h2>
+    </div>
+    <div id="columMenosImportante" class="columna">
+      <h2>Menos Importante</h2>
+    </div>
+  </div>
+
+  <script src="dashB.js"></script>
+</body>
+</html>
